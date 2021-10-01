@@ -19,7 +19,7 @@ function firstQuestion(){
         imageUrl: '../pink.png',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("./iput-bg.jpg")',
+        background: '#fff url("iput-bg.jpg")',
         imageAlt: 'Custom image',
       }).then(function(){
         $('.content').show(200);
@@ -28,7 +28,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('../duck.mp3');
+    var audio = new Audio('duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -41,7 +41,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('./Swish1.mp3');
+    var audio = new Audio('Swish1.mp3');
     audio.play();
     if (screen.width<=600) {
         var x = Math.random() * 300;
@@ -93,7 +93,7 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('./tick.mp3');
+    var audio = new Audio('tick.mp3');
     audio.play();
     Swal.fire({
         title: 'Hãy nêu cảm nghĩ đi 🥴(không có từ xàm hoặc ngáo nhá, dỗi vl)',
@@ -101,7 +101,7 @@ $('#yes').click(function() {
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("./iput-bg.jpg")',
+        background: '#fff url("iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
               url("./giphy2.gif")
@@ -120,7 +120,7 @@ $('#yes').click(function() {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Xong 🙄',
-                background: '#fff url("./iput-bg.jpg")',
+                background: '#fff url("iput-bg.jpg")',
                 title: 'Cảm ơn con bè đã đi đến đây 🙂',
                 text: "",
                 confirmButtonColor: '#83d0c9',
