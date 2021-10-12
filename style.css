@@ -1,82 +1,67 @@
-.content {
-    position: relative;
-    z-index: 3;
-  }
-  #no{
-    position: absolute;
-    display: inline-block;
-    left: 35%; 
-    top: 40vh;
-    -webkit-transition: all 0.1s ease-out;
-  }
-  #yes{
-    position: absolute;
-    display: inline-block;
-    left: 70%; 
-    top: 40vh;
-    -webkit-transition: all 0.3s ease-out;
-  }
-#bg{
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: .8;
-  /* height: 100vh; */
-  z-index: 0;
-  background-repeat: no-repeat;
-  background-image: url(cat.jpg);
-  background-size: cover;
-  background-position: 50%;
-  -webkit-filter: blur(4px);
-}
-.swal2-title, .swal2-content{
-  color: azure !important;
-}
-.swal2-popup {
-  border-radius: 15px !important;
-}
+*{
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-header h2 {
-  font-family: 'Pacifico';
-  font-size: 80px;
-  text-align: center;
-	margin-bottom: 30px;
 }
-header h4 {
-  font-family: 'Pacifico';
-  text-align: center;
+.wrapper{
+    width: 90%;
+    margin: 10px auto;
 }
-
-@media only screen and (max-width: 500px) {
-  header h2 {
-    font-family: 'Pacifico';
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  header h4 {
-    font-family: 'Pacifico';
-    text-align: center;
-    padding: 15px;
-  }
-  #no{
-    position: absolute;
-    display: inline-block;
-    left: 7%; 
-    top: 40vh;
-    font-size: 14px;
-    padding: 3px;
-    -webkit-transition: all 0.1s ease-out;
-  }
-  #yes{
-    position: absolute;
-    display: inline-block;
-    left: 58%; 
-    top: 40vh;
-    font-size: 14px;
-    padding: 3px;
-    -webkit-transition: all 0.3s ease-out;
-  }
+.logo{
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+}
+.main{
+    margin-top:  50px;
+}
+.banner{
+    width: 45%;
+    float: left;
+    
+}
+.banner img{
+    width:100% ;
+    height: auto;
+    border-radius: 10px;
+}
+.content{
+    width: 45%;
+    float: right;
+}
+.content-link{
+    margin-top: 100px;
+}
+.content-link-item{
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #222;
+    
+}
+.content-link-item:hover{
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+.content-link-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.content-noti{
+    color: #fff;
+    font-size: 20px;
+}
+.clear{
+    clear: both;
+}
+.content-footer{
+    color: #fff;
+}
+.content-footer a{
+    color: red;
 }
